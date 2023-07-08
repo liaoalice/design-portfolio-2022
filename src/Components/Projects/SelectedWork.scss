@@ -1,0 +1,141 @@
+.w-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+    padding-top: 2em;
+}
+
+.all-designs-section {
+    padding-right: 72px;
+    padding-bottom: 0px;
+    padding-left: 72px;
+}
+
+.all-designs-section {
+    position: relative;
+    padding-top: 40px;
+}
+
+.design-block-copy.ux-block {
+    padding: 40px;
+}
+
+.design-block-copy {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.project-copy {
+    position: relative;
+    top: auto;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 52px;
+    box-sizing: border-box;
+    background-color: white;
+    transition: all .2s ease-in-out; 
+    border: solid thick black;
+}
+
+.project-copy:hover{
+    transform: scale(1.05);
+}
+
+.design-image.home-image {
+    border-right: solid thick black;
+}
+
+.project-nolink{
+    position: relative;
+    top: auto;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 52px;
+    box-sizing: border-box;
+    transition: all .2s ease-in-out; 
+    border: solid thick black;
+    background-color: white;
+}
+
+.grid-copy {
+    display: grid;
+    padding-bottom: 0px;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    grid-row-gap: 16px;
+    grid-template-columns: 0.988fr 1fr;
+    grid-template-rows: auto;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+img {
+    border: 0;
+}
+
+#project-descriptor {
+    justify-self: center;
+    align-self: center;
+}
+
+.design-title.project-title {
+    margin: 0px auto 10px;
+    padding-bottom: 0px;
+    align-self: auto;
+    flex: 0 auto;
+    color: rgb(0, 0, 248);
+    font-size: 26px;
+    text-align:center;
+}
+
+.paragraph-8 {
+    display: block;
+    width: 72%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.project-copy .p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width:0px) and(max-width: 640px){
+    .grid-copy {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .design-image.home-image {
+        max-width: 100%;
+        border-right: none;
+        border-bottom: solid thick black;
+    }
+
+    .design-title.project-title {
+        font-size: 22px;
+    }
+
+    .paragraph-8 {
+        display:none;
+    }
+    
+}

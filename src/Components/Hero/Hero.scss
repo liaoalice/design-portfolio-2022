@@ -1,0 +1,100 @@
+.home-cover {
+    height: 88vh;
+    position: relative;
+    transition: opacity cubic-bezier(.19,1,.22,1) 2s;
+}
+
+div {
+    display: block;
+}
+
+.home-cover-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 1 / span 3;
+}
+
+.home-header-background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.cover-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+
+.cover-image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(700 * 100vw / 2058);
+}
+.cover-poem {
+    grid-column: 11 / span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.cover-poem-body {
+    position: relative;
+    max-height: 320px;
+    writing-mode: vertical-rl;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color: #E2001D;
+    margin-left: auto;
+    margin-top: 48px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.cover-poem-body {
+    animation: fadeOut;
+}
+
+.expand_more_image{
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 0;
+}
+.expand_more_image_wrap {
+    margin: 0px auto;
+}
+
+.expand_more_image .expand_more_image img{
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 640px) {
+    #cover-image { display: none; }   /* hide it elsewhere */
+    #poem { display: none; }   /* hide it elsewhere */
+}
+
+@media screen and (min-width: 0px) and (max-width: 375px) {
+    .home-cover{
+        padding-top: 16vh;
+    }
+}
+
+
+
+
+
+

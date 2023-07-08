@@ -1,0 +1,235 @@
+.project .grid {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    max-width: calc(100% - 40px);
+    margin: auto;
+}
+
+.project-hero{
+    padding-top: 12em;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.project-hero-background {
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+
+.project-intro {
+    padding-top: 20px;
+    padding-bottom: 120px;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: grid;
+    grid-column-gap: 16px;
+    margin-inline-start: 72px;
+    margin-inline-end: 60px;
+    grid-row-gap: 8px;
+}
+
+.project-description, .project-title {
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+.project-description{
+    display: inline-block;
+}
+
+.paragraph--large {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.detail {
+    display: inline-block;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-content: center;
+    overflow: hidden;
+}
+
+.project a{
+    color: #1E00F8;
+    font-weight: 600;
+}
+
+.project-main {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-template-columns: repeat(12,1fr);
+    display: grid;
+}
+
+.project-image {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.project-image--full {
+    padding: 24px 16px;
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+.project-image img {
+    margin: auto;
+}
+
+.prototype img{
+    width: 70%;
+}
+
+.project-intro h1{
+    color: black;
+    font-family: 'Inconsolata', monospace;
+    font-size: 50px;
+}
+
+.project-main h3 {
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.project-main body {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.case-list {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: black;
+    font-family: 'Inconsolata', monospace;
+    line-height: 24px;
+}
+
+@media screen and (min-width:0px) and (max-width: 768px){
+    .project-intro {
+        padding-top: 20px;
+        padding-bottom: initial;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        display: table-column;
+        grid-column-gap: initial;;
+        grid-row-gap: initial;
+        margin-inline-start: initial;
+        margin-inline-end: initial;
+    }
+
+    .project-hero-image {
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+    }
+
+    .project-hero-image img{
+        object-fit: contain;
+        margin: auto;
+        display: block;
+    }
+
+    .project-image img {
+        margin: auto;
+        width: 100%;
+        display: block;
+    }
+
+    figure {
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+    }
+
+    .project-intro h1{
+        font-size: 40px;
+    }
+
+    .project-main {
+        padding-top: 20px;
+        padding-bottom: initial;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        display: table-column;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .project .grid {
+        max-width: calc(100% - 120px);
+    }
+
+    .project-hero-image {
+        margin: auto;
+    }
+    
+    .project-intro {
+        padding-top: 72px;
+    }
+
+    .project-intro {
+        padding-bottom: 140px;
+        grid-row-gap: 20px;
+    }
+
+    .project-title {
+        font-size: 42px;
+        grid-column-start: 2;
+        grid-column-end: 5;
+    }
+
+    .project-description {
+        grid-column-start: 6;
+        grid-column-end: 12;
+    }
+
+    .body {
+        padding: 120px 0;
+        grid-column-start: 4;
+        grid-column-end: 10;
+    }
+
+    .project-main h3 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .first-detail {
+        grid-column-start: 6;
+        grid-column-end: 8;
+    }
+
+    .second-detail {
+        grid-column-start: 8;
+        grid-column-end: 10;
+    }
+
+    .third-detail {
+        grid-column-start: 10;
+        grid-column-end: 12;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .project .grid {
+        max-width: 1600px;
+    }
+}
+
