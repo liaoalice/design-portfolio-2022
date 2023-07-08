@@ -2,9 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactBreakpoints from 'react-breakpoints'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Home, Aboutpage, Storefrontcase, ClimateDonorcase, CScase, Illustrationpage, Passwordpage } from './App';
-import ScrollToTop from './Components/ScrollToTop';
-import ProtectedRoutes from './ProtectedRoutes';
+import { Home, Aboutpage, Playpage, ClimateDonorcase, CScase, PTCcase, Missing, Writingpage, Themercase } from './App';
+import ScrollToTop from './ScrollToTop';
+// import ProtectedRoutes from './ProtectedRoutes';
+
+
 
 const breakpoints = {
   mobile: 320,
@@ -20,16 +22,27 @@ ReactDOM.render(
   <ReactBreakpoints breakpoints={breakpoints}>
     <Router>
       <ScrollToTop />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<Aboutpage />} />
-          <Route exact path="/play" element={<Illustrationpage />} />
-          <Route element={<ProtectedRoutes /> && <Passwordpage/>}>
-            <Route exact path="/work/ptc" element={<Storefrontcase />} />
-          </Route>
-          <Route exact path="/work/climate-donor" element={<ClimateDonorcase />} />
-          <Route exact path="/work/covidsupport" element={<CScase />} />
-        </Routes>
+      <Routes>
+        {/* public routes */}
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<Aboutpage />} />
+        <Route exact path="/play" element={<Playpage />} />
+
+        {/* Case Studies */}
+        <Route exact path="/work/ptc-tile" element={<PTCcase />} />
+        <Route exact path="/work/climate-donor" element={<ClimateDonorcase />} />
+        <Route exact path="/work/covidsupport" element={<CScase />} />
+        <Route exact path="/work/ptc-themer" element={<Themercase />} />
+
+        {/* protected routes */}
+        {/* <Route element={AuthyComponent} /> */}
+
+        {/* Blog */}
+        <Route exact path="/writing" element={<Writingpage />} />
+
+        {/*404 page*/}
+        <Route path="*" element={<Missing />} />
+      </Routes>
     </Router>,
   </ReactBreakpoints>,
   document.getElementById('root')

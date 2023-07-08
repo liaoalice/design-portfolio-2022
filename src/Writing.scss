@@ -1,0 +1,29 @@
+.post-index {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.post-index a{
+    text-decoration: underline !important;
+}
+
+.post-index h3{
+    font-size: 24px;
+}
+
+.story {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    line-height: 0;
+}
+
+.story p {
+    line-height: 0!important;
+}
+
+.pub p {
+    font-size: 14px;
+}

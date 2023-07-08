@@ -1,15 +1,19 @@
 import React from "react";
-import Navbar from "./Components/Navbar/Navbar";
-import Hero from "./Components/Hero/Hero";
-import SelectedWork from "./Components/Projects/SelectedWork";
-import IllusGallery from "./Components/IllusGallery/IllusGallery";
-import Footer from "./Components/Footer/Footer";
-import About from "./Components/About/About";
-import CovidSupport from "./Components/Projects/CSupport/CovidSupport";
-import ClimateDonor from "./Components/Projects/Climate Donor/Climate Donor";
-import Storefront from "./Components/Projects/PTC/Storefront";
+import Navbar from "./Navbar";
+import Hero from "./Hero";
+import SelectedWork from "./SelectedWork";
+import Gallery from "./Gallery";
+import Footer from "./Footer";
+import About from "./About";
+import CovidSupport from "./CovidSupport";
+import ClimateDonor from "./Climate Donor";
+import PTC from "./PTC";
+import Writing from "./Writing";
 import "./App.scss"
-import Password from "./Components/Password";
+// import Password from "./Password";
+import * as dotenv from 'dotenv'; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
+import Themer from "./Themer";
+dotenv.config();
 
 const Home = () => {
   return (
@@ -22,11 +26,11 @@ const Home = () => {
   )
 };
 
-const Illustrationpage = () => {
+const Playpage = () => {
   return (
     <div>
       <Navbar />
-      <IllusGallery />
+      <Gallery />
       <Footer />
     </div>
   )
@@ -42,11 +46,11 @@ const Aboutpage = () => {
   )
 };
 
-const Storefrontcase = () => {
+const PTCcase = () => {
   return (
     <div>
       <Navbar />
-      <Storefront />
+      <PTC />
       <Footer />
     </div>
   )
@@ -62,7 +66,7 @@ const ClimateDonorcase = () => {
   )
 }
 
-const CScase = () =>{
+const CScase = () => {
   return (
     <div>
       <Navbar />
@@ -72,13 +76,44 @@ const CScase = () =>{
   )
 }
 
-const Passwordpage = () => {
+const Themercase = () => {
   return (
     <div>
       <Navbar />
-      <Password />
+      <Themer />
+      <Footer />
     </div>
   )
 }
 
-export { Home, Illustrationpage, Aboutpage, Storefrontcase, ClimateDonorcase, CScase, Passwordpage };
+// const Passwordpage = ({ setIsAuthed }) => {
+//   return (
+//     <div>
+//       <Navbar />
+//       <Password setIsAuthed={setIsAuthed} />
+//     </div>
+//   )
+// }
+
+const Writingpage = () => {
+  return (
+    <div>
+      <Navbar />
+      <Writing />
+      <Footer />
+    </div>
+  )
+}
+
+const Missing = () => {
+  return (
+    <div>
+      <Navbar />
+      <div class="page-not-found">
+        <h1>404. Page not found.</h1>
+      </div>
+    </div>
+  )
+}
+
+export { Home, Aboutpage, Playpage, ClimateDonorcase, CScase, PTCcase, Writingpage, Missing, Themercase };
