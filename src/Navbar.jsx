@@ -46,7 +46,7 @@ export default function Navbar() {
           {(toggleMenu || screenWidth > 640) && (
             <ul className="list" id="menu-items">
               <li className="items"><HashLink smooth to="/#work">Work</HashLink></li>
-              {/* <li className="items"><Link to="/play">Play</Link></li> */}
+              <li className="items"><Link to="/play">Play</Link></li>
               <li className="items"><Link to="/about">About</Link></li>
               {/* <li className="items"><Link to="/posts">Blog</Link></li> */}
               {/* <li className="items"><Link to={PDF} target='_blank' rel='noopener noreferrer'>Resume</Link></li> */}

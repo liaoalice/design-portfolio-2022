@@ -38,8 +38,8 @@ const itemData = [
     title: 'The Morales family from Into the Spider-Verse hugging each other, on a yellow background',
   },
   {
-    img: '/img/illustrations/jack_commission.png',
-    title: 'A painted portrait Jack and John smiling in aprons.',
+    img: '/img/illustrations/barbie.png',
+    title: 'Sketches of characters from Barbie(2023).',
   },
   {
     img: '/img/illustrations/respite.gif',
