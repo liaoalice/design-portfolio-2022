@@ -63,12 +63,12 @@ export default function Navbar() {
                   <div className="items headline">                                    <p>Work</p>
                   </div>
                 </div>
-                {/* <div className="menu-item-container">
+                <div className="menu-item-container">
                   <div className="items">
                     <Link to="/work/ptc-themer">PTC Themer</Link>
                   </div>
                 </div>
-                <div className="menu-item-container">
+                {/* <div className="menu-item-container">
                   <div className="items">
                     <Link to="/work/ptc-tile">PTC Tile</Link>
                   </div>

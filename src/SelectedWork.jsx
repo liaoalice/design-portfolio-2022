@@ -9,7 +9,7 @@ export default class SelectedWork extends React.Component {
         <div className="w-container">
           <div class="w-dyn-list">
             <div role="list" class="w-dyn-items">
-              {/* <div role="listitem" class="design-item w-dyn-item">
+              <div role="listitem" class="design-item w-dyn-item">
                 <Link to="/work/ptc-themer" class="design-block-copy.ux-block.w-inline-block">
                   <div class="project-copy">
                     <div class="w-layout-grid grid-copy">
@@ -19,13 +19,13 @@ export default class SelectedWork extends React.Component {
                           PTC Themer
                         </h3>
                         <p class="paragraph-8">
-                          A custom Figma plugin to assist product teams in migrating design files to a new theme.
+                          A custom design tool to assist teams in migrating prototype files to a new theme.
                         </p>
                       </div>
                     </div>
                   </div>
                 </Link>
-              </div> */}
+              </div>
               <div role="listitem" class="design-item w-dyn-item">
                 <Link to="/work/climate-donor" class="design-block-copy.ux-block.w-inline-block">
                   <div class="project-copy">
