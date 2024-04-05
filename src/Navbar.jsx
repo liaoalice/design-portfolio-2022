@@ -65,14 +65,14 @@ export default function Navbar() {
                 </div>
                 <div className="menu-item-container">
                   <div className="items">
+                    <Link to="/work/ptc-convergence">Convergence</Link>
+                  </div>
+                </div>
+                <div className="menu-item-container">
+                  <div className="items">
                     <Link to="/work/ptc-themer">PTC Themer</Link>
                   </div>
                 </div>
-                {/* <div className="menu-item-container">
-                  <div className="items">
-                    <Link to="/work/ptc-tile">PTC Tile</Link>
-                  </div>
-                </div> */}
                 <div className="menu-item-container">
                   <div className="items">
                     <Link to="/work/climate-donor">Climate Donor</Link>
@@ -93,9 +93,6 @@ export default function Navbar() {
                   {/* <div className="items">                                        <Link to="/posts">Blog
                   </Link></div> */}
                 </div>
-                {/* <div className="menu-item-container">
-                  <div className="items">                                        <Link to={PDF} target='_blank' rel='noopener noreferrer'>Resume</Link></div>
-                </div> */}
               </div>
             </div>
           </nav>

@@ -22,7 +22,7 @@ export default class Hero extends React.Component {
         <div class="home-cover grid">
           <div class="home-cover-content">
             <h1 class="home-cover-title">ALICE<br></br>LIAO</h1>
-            <h2 class="home-cover-subtitle">UX Designer</h2>
+            <h2 class="home-cover-subtitle">Product Designer<br></br> at 1Password</h2>
             {/* <p class="home-cover-description">Designer with a passion for building parity between code and design.</p> */}
           </div>
           <aside class="cover-poem" div id="poem">

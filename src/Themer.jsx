@@ -17,7 +17,7 @@ export default class Themer extends React.Component {
               <p class="paragraph--large project-lede">
                 <p>To re-center software around accessibility, PTC's design system team created new visual guidelines for product teams to adopt.</p>
                 <p>We also began rolling out semantic design tokens to improve scalability and consistency across products.</p>
-                <p>However, while preparing teams for migration to the new theme, we ran into obstacles with updating files in Figma, the design software our designers use.</p>
+                <p>However, while preparing teams for migration to the new theme, we ran into obstacles with updating files in Figma, the design software PTC designers use.</p>
                 <p>I built a tool to circumvent these difficulties and facilitate the migration process.</p>
               </p>
             </div>

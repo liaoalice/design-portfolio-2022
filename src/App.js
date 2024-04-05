@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import About from "./About";
 import CovidSupport from "./CovidSupport";
 import ClimateDonor from "./Climate Donor";
-import PTC from "./PTC";
+import Convergence from "./Convergence";
 import Writing from "./Writing";
 import "./App.scss"
 // import Password from "./Password";
@@ -46,16 +46,6 @@ const Aboutpage = () => {
   )
 };
 
-const PTCcase = () => {
-  return (
-    <div>
-      <Navbar />
-      <PTC />
-      <Footer />
-    </div>
-  )
-}
-
 const ClimateDonorcase = () => {
   return (
     <div>
@@ -86,14 +76,15 @@ const Themercase = () => {
   )
 }
 
-// const Passwordpage = ({ setIsAuthed }) => {
-//   return (
-//     <div>
-//       <Navbar />
-//       <Password setIsAuthed={setIsAuthed} />
-//     </div>
-//   )
-// }
+const Convergencecase = () => {
+  return (
+    <div>
+      <Navbar />
+      <Convergence />
+      <Footer />
+    </div>
+  )
+}
 
 const Writingpage = () => {
   return (
@@ -116,4 +107,4 @@ const Missing = () => {
   )
 }
 
-export { Home, Aboutpage, Playpage, ClimateDonorcase, CScase, PTCcase, Writingpage, Missing, Themercase };
+export { Home, Aboutpage, Playpage, ClimateDonorcase, CScase, Writingpage, Missing, Themercase, Convergencecase };

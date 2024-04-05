@@ -9,10 +9,21 @@ export default function About() {
         </div> */}
         <div class="about-text">
           <h2>Hi, I'm Alice!</h2>
-          <p>I'm an "Associate UI/UX Design Engineer" on the design system team at PTC. My title's a bit of a mouthful, so I often say I'm a product designer who dabbles in code. <p>Before my current role, I was designing animated graphics at an agency. And before that role, I was an English major and Computer Science minor at Vanderbilt University. I fell in love with design through creating flyers, websites, and merchandise for student extracurriculars.</p></p>
-          <p>When I'm not designing, I enjoy reading, drawing, and learning how to boulder. I love my electric guitar and Carly Rae Jepsen :)</p>
-          {/* <hr /> */}
-          {/* <p>I was born in the Year of the Rabbit and named in English for a certain girl who encounters a white rabbit, which is why I've styled this site after <a href="https://en.wikipedia.org/wiki/White_Rabbit_(candy)">White Rabbit candy</a>. The red characters at the top left of the navigation bar form my Chinese given name.</p> */}
+          <p>I'm a product designer on the design systems team at 1Password.
+          </p>
+          <p>Prior to working in design, I studied English and Computer Science at Vanderbilt University. I fell in love with design through creating flyers, websites, and merch for student extracurriculars. My multidisciplinary background bolsters my work in the form of digital accessibility, collaboration with developers, and building custom Figma tooling.</p>
+          <p>When I'm not designing, I'm bouldering, drawing, exploring museums, playing guitar, reading ecology articles in <i><a href="https://www.quantamagazine.org/">Quanta Magazine</a></i>, and writing speculative fiction.</p>
+          <p>You can email me at <a href="mailto:alice.g.liao@gmail.com">alice.g.liao@gmail.com</a>.</p>
+          {/* <br />
+          <hr />
+          <br />
+          <p>I love:</p>
+          <ul>
+            <li></li>
+            <li>17th century Renaissance poet John Donne</li>
+            <li>Carly Rae Jepsen's 2015 album E•MO•TION</li>
+            <li>Botanical gardens</li>
+          </ul> */}
           {/* <p className="currently">Currently: Reading <i>Anna Karenina</i> by Leo Tolstoy, learning electric bass, writing a short story, making Hong Kong-style borscht, and playing <i>The Legend of Zelda: Tears of the Kingdom</i>.</p> */}
           {/* <h3>Experience</h3>
           <table class="about-experience">

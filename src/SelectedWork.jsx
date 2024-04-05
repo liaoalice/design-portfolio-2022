@@ -9,6 +9,23 @@ export default class SelectedWork extends React.Component {
         <div className="w-container">
           <div class="w-dyn-list">
             <div role="list" class="w-dyn-items">
+            <div role="listitem" class="design-item w-dyn-item">
+                <Link to="/work/ptc-convergence" class="design-block-copy.ux-block.w-inline-block">
+                  <div class="project-copy">
+                    <div class="w-layout-grid grid-copy">
+                      <img src={process.env.PUBLIC_URL + '/img/ptc/CDS Thumbnail.png'} alt="Collage of Convergence Design System Components" class="design-image home-image"></img>
+                      <div id="project-descriptor">
+                        <h3 class="design-title project-title">
+                          Convergence Design System
+                        </h3>
+                        <p class="paragraph-8">
+                          A set of practices and tools to help PTC teams create accessible and cohesive products.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
               <div role="listitem" class="design-item w-dyn-item">
                 <Link to="/work/ptc-themer" class="design-block-copy.ux-block.w-inline-block">
                   <div class="project-copy">

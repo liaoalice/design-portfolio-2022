@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactBreakpoints from 'react-breakpoints'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Home, Aboutpage, Playpage, ClimateDonorcase, CScase, PTCcase, Missing, Writingpage, Themercase } from './App';
+import { Home, Aboutpage, Playpage, ClimateDonorcase, CScase, Missing, Writingpage, Themercase, Convergencecase } from './App';
 import ScrollToTop from './ScrollToTop';
 // import ProtectedRoutes from './ProtectedRoutes';
 
@@ -29,13 +29,10 @@ ReactDOM.render(
         <Route exact path="/play" element={<Playpage />} />
 
         {/* Case Studies */}
-        <Route exact path="/work/ptc-tile" element={<PTCcase />} />
         <Route exact path="/work/climate-donor" element={<ClimateDonorcase />} />
         <Route exact path="/work/covidsupport" element={<CScase />} />
         <Route exact path="/work/ptc-themer" element={<Themercase />} />
-
-        {/* protected routes */}
-        {/* <Route element={AuthyComponent} /> */}
+        <Route exact path="/work/ptc-convergence" element={<Convergencecase />} />
 
         {/* Blog */}
         <Route exact path="/writing" element={<Writingpage />} />
